@@ -6,9 +6,15 @@ export class NewItem extends Component {
     return (
       <div className='my-3'>
         <div className="card" >
-        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success" style={{left:'90%', zIndex: '1'}}> {source}  
-            </span>
-          <img src={imageUrl} className="card-img-top" alt="/public/logonm.png" />
+          <div style={{
+            display:  'flex',
+            justifyContent: 'flex-end',
+            position: 'absolute',
+            right: '0'
+          } }>       
+            <span className="badge rounded-pill bg-success" > {source}  
+            </span> </div>
+          <img src={imageUrl} className="card-img-top" alt='logonm.png' />
           <div className="card-body">
             <h5 className="card-title">{title}... </h5>
             <p className="card-text">{description}...</p>
