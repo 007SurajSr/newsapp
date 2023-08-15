@@ -8,11 +8,13 @@ import {
   BrowserRouter as Router,
   Routes,
   Route} from "react-router-dom";
-  import LoadingBar from 'react-top-loading-bar'
+import LoadingBar from 'react-top-loading-bar'
+ 
 
 export default class App extends Component {
   pageSize=5;
-  apiKey = '41875034ddda46cfb420ae35965f7282';
+  apiKey = process.env.REACT_APP_NEWS_API
+  
   state = {
     progress:0
   }
