@@ -14,7 +14,7 @@ const NewItem = (props) => {
           } }>       
             <span className="badge rounded-pill bg-success" > {source}  
             </span> </div>
-          <img src={imageUrl} className="card-img-top" alt='logonm.png' />
+          <img src={imageUrl} className="card-img-top" alt='/' />
           <div className="card-body">
             <h5 className="card-title">{title}... </h5>
             <p className="card-text">{description}...</p>
